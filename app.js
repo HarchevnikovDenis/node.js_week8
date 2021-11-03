@@ -10,7 +10,7 @@ export default function appScr(express, bodyParser, fs, crypto, http, CORS, User
         .use(bodyParser.urlencoded({extended:true}))  
         .use(bodyParser.json()) 
         .all('/login/', r => {
-            r.res.set(headersTEXT).send('itmo307709');
+            r.res.set(headersTEXT).send('itmo224656');
         })
         .all('/code/', r => {
             r.res.set(headersTEXT)
@@ -70,7 +70,7 @@ export default function appScr(express, bodyParser, fs, crypto, http, CORS, User
             r.res.send(got)
             
         })
-        .use(({res:r})=>r.status(404).set(headersHTML).send('itmo307709'))
+        .use(({res:r})=>r.status(404).set(headersHTML).send('itmo224656'))
         .set('view engine','pug')
     return app;
 }
